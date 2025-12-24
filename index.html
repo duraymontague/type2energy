@@ -5,73 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Type 2 Energy LLC</title>
   <style>
-/* Existing styles... */
-
-/* Mobile adjustments */
-@media (max-width: 768px) {  /* Common breakpoint for phones/tablets */
-  body {
-    padding: 1rem; /* Add breathing room on small screens */
-    min-height: 100vh;
-  }
-
-  h1 {
-    font-size: 3.5rem; /* Scale down big headings */
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.2rem; /* Slightly smaller body text */
-    padding: 0 1rem; /* Prevent edge-to-edge on narrow screens */
-  }
-
-  .publication {
-    padding: 1rem;
-    margin: 1rem 0.5rem; /* Center it with some margin */
-  }
-
-  .santa-corner {
-    top: 15px;
-    right: 20px;
-    font-size: 40px; /* Smaller hat on mobile */
-  }
-
-  footer {
-    bottom: 1rem;
-    font-size: 0.9rem;
-  }
-}
-    body { 
-      margin: 0; 
-      padding: 0; 
-      font-family: 'Helvetica Neue', Arial, sans-serif; 
-      background: #000; 
-      color: #fff; 
-      text-align: center; 
-      min-height: 100vh; /* Fixed: min-height instead of height */
-      display: flex; 
-      flex-direction: column; 
-      justify-content: center; 
-      align-items: center; 
-      position: relative; 
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
-    h1 { font-size: 5rem; letter-spacing: 0.15em; text-transform: uppercase; margin: 0; }
-    h2 { font-size: 2.5rem; margin: 1rem 0; color: #00ffff; }
-    h3 { font-size: 1.8rem; margin: 2rem 0 1rem; color: #00ffff; }
-    p { font-size: 1.4rem; max-width: 900px; margin: 1.5rem auto; line-height: 1.6; }
-    a { color: #00ffff; text-decoration: none; border-bottom: 2px solid #00ffff; padding-bottom: 0.3rem; }
-    a:hover { color: #00ffff; border-bottom-color: #fff; }
-    footer { position: absolute; bottom: 2rem; font-size: 1rem; opacity: 0.8; }
-    .publication { 
-      max-width: 900px; 
-      margin: 2rem auto; 
-      padding: 1rem; 
-      border: 1px solid #00ffff; 
-      border-radius: 8px; 
+    h1 {
+      font-size: 5rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin: 0;
     }
-
+    h2 {
+      font-size: 2.5rem;
+      margin: 1rem 0;
+      color: #00ffff;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      color: #00ffff;
+    }
+    p {
+      font-size: 1.4rem;
+      max-width: 900px;
+      margin: 1.5rem auto;
+      line-height: 1.6;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 0.3rem;
+    }
+    a:hover {
+      color: #00ffff;
+      border-bottom-color: #fff;
+    }
+    footer {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+    .publication {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #00ffff;
+      border-radius: 8px;
+    }
     /* Small Santa hat in top-right corner */
     .santa-corner {
       position: absolute;
@@ -83,7 +75,6 @@
       z-index: 10;
       pointer-events: none;
     }
-
     @keyframes sway {
       0%, 100% { transform: rotate(-15deg); }
       50% { transform: rotate(-25deg); }
@@ -92,18 +83,41 @@
       animation: sway 5s ease-in-out infinite;
     }
 
+    /* Mobile responsiveness */
     @media (max-width: 768px) {
+      body {
+        padding: 1rem 1.5rem; /* Prevents text clipping on sides */
+        min-height: 100vh;
+      }
+      h1 {
+        font-size: 3.5rem; /* Reduced from 5rem to fit mobile */
+        letter-spacing: 0.1em;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+        padding: 0 0.5rem;
+      }
+      .publication {
+        margin: 1rem 0;
+        padding: 1rem;
+      }
       .santa-corner {
+        top: 15px;
+        right: 20px;
         font-size: 40px;
-        top: 20px;
-        right: 30px;
+      }
+      footer {
+        bottom: 1rem;
+        font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
   <div class="santa-corner">🎅</div>
-
   <h1>Type 2 Energy</h1>
   <h2>Compact High-Field Stellarator</h2>
   <p>Direct-to-electric fusion. Quasi-isodynamic neoclassical optimization. Path to Q > 10.</p>
