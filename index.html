@@ -73,6 +73,19 @@
       border: 1px solid #00ffff;
       border-radius: 8px;
     }
+    .schematic {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 1rem;
+      border: 1px solid #00ffff;
+      border-radius: 8px;
+      background: rgba(0, 255, 255, 0.05);
+    }
+    object {
+      width: 100%;
+      height: 800px;
+      border: none;
+    }
     footer {
       position: absolute;
       bottom: 2rem;
@@ -84,6 +97,8 @@
       h2 { font-size: 2rem; }
       p { font-size: 1.2rem; padding: 0 0.5rem; }
       .publication { margin: 1rem 0; padding: 1rem; }
+      .schematic { margin: 2rem 0; }
+      object { height: 600px; }
       footer { bottom: 1rem; font-size: 0.9rem; }
     }
   </style>
@@ -102,7 +117,14 @@
     <p><a href="https://zenodo.org/records/18013390" target="_blank">View on Zenodo</a></p>
     <p>This preprint explores modular aneutronic fusion using p-B11 in hybrid confinement with direct conversion—aiming for compact, scalable, decentralized power.</p>
   </div>
-  <p>Conceptual blueprint in development — focused on p-B11 direct conversion (coming soon).</p>
-  <footer>© 2025 Type 2 Energy LLC. All rights reserved.</footer>
+
+  <div class="schematic">
+    <h3>Type 2 Energy: p-B11 Aneutronic Fusion Reactor (Conceptual)</h3>
+    <object data="pB11_Schematic.pdf" type="application/pdf">
+      <p><a href="pB11_Schematic.pdf">View p-B11 Schematic PDF</a></p>
+    </object>
+  </div>
+
+  <footer>© 2025 Type 2 Energy LLC. All rights reserved. Patent Pending.</footer>
 </body>
 </html>
